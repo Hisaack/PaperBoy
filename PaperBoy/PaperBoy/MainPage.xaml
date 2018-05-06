@@ -5,6 +5,9 @@
              xmlns:local="clr-namespace:PaperBoy"
              x:Class="PaperBoy.MainPage">
   <!--Pages can be added as references or inline-->
+    <TabbedPage.ToolbarItems>
+        <ToolbarItem Text="Settings" Clicked="ToolbarItem_Clicked"/>
+    </TabbedPage.ToolbarItems>
     <TabbedPage.Children>
         <pages:TechnologyPage Title="Technology News" />
         <pages:TendingPage Title="Trending News"/>

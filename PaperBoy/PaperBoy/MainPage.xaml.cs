@@ -16,5 +16,10 @@ namespace PaperBoy
         {
             InitializeComponent();
         }
+
+        private async void ToolbarItem_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Pages.SettingsPage());
+        }
     }
 }

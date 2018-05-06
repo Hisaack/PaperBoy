@@ -6,14 +6,14 @@ using System.Text;
 using Xamarin.Forms;
 
 namespace PaperBoy
-{
+{ 
 	public partial class App : Application
 	{
 		public App ()
 		{
 			InitializeComponent();
 
-			MainPage = new PaperBoy.MainPage();
+		    MainPage = new NavigationPage(new PaperBoy.MainPage());
 		}
 
 		protected override void OnStart ()
